@@ -249,7 +249,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   showBorder: 1
-  borderColor: {r: 1, g: 1, b: 1, a: 1}
+  borderColor: {r: 0.11372549, g: 0.4117647, b: 1, a: 0.7294118}
   borderThickness: 0.01
   _radius: 0
   _circleCollider: {fileID: 343495052}

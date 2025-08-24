@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class MonsterStat : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    // AttackRange는 
+    // UI표시할 땐, * 37.5f 해줘야 함. 37.5는 보정 계수 (0.8에서 다음 레벨 0.013 더해주는 게 나은듯)
 
-    // Update is called once per frame
-    void Update()
+    private MonsterAttackStat _attackStat = new MonsterAttackStat();
+    private MonsterDefenseStat _defenseStat = new MonsterDefenseStat();
+
+    public MonsterAttackStat AttackStat { get { return _attackStat; } }
+    public MonsterDefenseStat DefenseStat { get { return _defenseStat; } }
+
+    public void Init()
     {
+        // TODO - 상점 강화 스탯으로 초기화
+        AttackStat.Damage = 1.0f;
+        AttackStat.AttackSpeed = 1.00f;
+        AttackStat.AttackRange = 0.8f;
         
+        DefenseStat.Hp = 3;
     }
 }

@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class PlayerStat : MonoBehaviour
 {
-    // AttackRange는 
-    // UI표시할 땐, * 37.5f 해줘야 함. 37.5는 보정 계수 (0.8에서 다음 레벨 0.013 더해주는 게 나은듯)
-
     private PlayerAttackStat _attackStat = new PlayerAttackStat();
     private PlayerDefenseStat _defenseStat = new PlayerDefenseStat();
 
@@ -23,7 +20,8 @@ public class PlayerStat : MonoBehaviour
         AttackStat.AttackRange = 30f;
         AttackStat.DamagePerMeter = 1.00000f;
 
-        DefenseStat.Hp = 5;
+        DefenseStat.MaxHp = 5;
+        DefenseStat.Hp = DefenseStat.MaxHp;
         DefenseStat.HpRegen = 0.00f;
     }
 }

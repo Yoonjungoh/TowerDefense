@@ -20,7 +20,7 @@ public class PlayerStat : MonoBehaviour
         AttackStat.AttackSpeed = 1.00f;
         AttackStat.CriticalRate = 1.00f;
         AttackStat.CriticalDamage = 1.20f;
-        AttackStat.AttackRange = 0.8f;
+        AttackStat.AttackRange = 30f;
         AttackStat.DamagePerMeter = 1.00000f;
 
         DefenseStat.Hp = 5;
